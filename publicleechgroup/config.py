@@ -23,18 +23,13 @@ load_dotenv("config.env")
 
 class Config:
     # get a token from @BotFather
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
+    TG_BOT_TOKEN = "5398553648:AAFj3Epl5t9y6vCRMQxzNZB6BubDC3QjUGc"
     # The Telegram API things
-    APP_ID = int(get_config("APP_ID", should_prompt=True))
-    API_HASH = get_config("API_HASH", should_prompt=True)
+    APP_ID = 5459324
+    API_HASH = "e41463b86cc9ef692b65489e665b0cc4"
     # Get these values from my.telegram.org
     # array to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = set(
-        int(x) for x in get_config(
-            "AUTH_CHANNEL",
-            should_prompt=True
-        ).split()
-    )
+    AUTH_CHANNEL = [1284483178]
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "./DOWNLOADS")
     # Telegram maximum file upload size
