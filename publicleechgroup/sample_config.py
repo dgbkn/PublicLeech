@@ -29,7 +29,7 @@ class Config:
     API_HASH = "e41463b86cc9ef692b65489e665b0cc4"
     # Get these values from my.telegram.org
     # array to store the channel ID who are authorized to use the bot
-    AUTH_CHANNEL = [1284483178]
+    AUTH_CHANNEL = {1284483178}
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "./DOWNLOADS")
     # Telegram maximum file upload size
@@ -102,5 +102,5 @@ class Config:
     )
     # array to store the users who will have control (permissions)
     # in the bot
-    SUDO_USERS = [1284483178]
+    SUDO_USERS = {1284483178}
     
